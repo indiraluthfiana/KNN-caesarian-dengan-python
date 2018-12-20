@@ -1,0 +1,19 @@
+#importing library
+import numpy as np  
+import matplotlib.pyplot as plt  
+import pandas as pd 
+
+#importing dataset
+caesarian = pd.read_csv("caesarian1.txt")
+
+caesarian.head()
+
+caesarian.info()
+
+# Variabel independen
+x = caesarian.drop(["caesarian"], axis = 1)
+x.head()
+
+# Variabel dependen
+y = caesarian["caesarian"]
+y.head()
